@@ -1,10 +1,10 @@
 # Hunter CS Winter 2019 CodeFest
 
 # Team Info
-### Team name:
+### Team name: Neophyte Movers
 ### Team members (format: GitHub username, last name, first name):
-- 
-- 
+- Farhene, Sultana, Farhene
+- thegabbythemaster, Gonzalez, Gabriella
 - 
 -
 - 
@@ -14,7 +14,7 @@
 - [ ] We are a CUNY2X bootcamp cohort team
 - [ ] We are a Daedalus / Google Mentored group
 - [ ] We are a beginner group (only completed CSCI 12700)
-- [ ] We plan to attend the final event on 1/31 at Google (time TBD)
+- [X] We plan to attend the final event on 1/31 at Google (time TBD)
 - As attendance is highly important, if you checked the above box but only some members will be attending, please indicate the number here: ___
 
 # General Info
