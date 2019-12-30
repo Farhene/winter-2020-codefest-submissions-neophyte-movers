@@ -52,4 +52,4 @@ class Climate
         std::string temperature_;   // high or low temperatures
         std::string air_pressure_;  // high or low air pressure
 
-}
+} //end of Climate.hpp

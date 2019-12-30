@@ -5,8 +5,8 @@
 ### Team members (format: GitHub username, last name, first name):
 - Farhene, Sultana, Farhene
 - thegabbythemaster, Gonzalez, Gabriella
-- 
--
+- darrenzhang2000, Zhang, Darren
+- Warren-source, Ball, Warren
 - 
 - 
 
