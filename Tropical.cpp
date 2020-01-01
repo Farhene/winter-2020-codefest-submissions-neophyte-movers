@@ -1,3 +1,8 @@
+/*tropical CPP file created by Gabriella Gonzalez
+inherits from the class Climate
+let me know if this is an okay class for tropical 
+and if i need to add anything else
+*/
 #include "Climate.hpp"
 #include "Tropical.hpp"
 #include <string>
