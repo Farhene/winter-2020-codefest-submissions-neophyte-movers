@@ -31,11 +31,11 @@ class Tropical: public Climate {
 
 		//sets the number of species living
 		void setNumberOfSpecies(int NumberOfSpecies);
-		
+
 		//returns the number of species living
 		int NumberOfSpecies();
 
-		virtual void display();
+		virtual void display() override;
 
 	private:
 		bool TropicalHumid_; //if tropical is humid or not
