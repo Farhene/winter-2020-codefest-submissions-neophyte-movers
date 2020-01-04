@@ -7,7 +7,7 @@ Oil::Oil()
 	cout<<"oil constructor called"<<endl;
 }
 
-string Oil::Description() const
+std::string Oil::Description() const
 {
     return "the process of generating energy from oil, located in reservoirs in the earth";
 }

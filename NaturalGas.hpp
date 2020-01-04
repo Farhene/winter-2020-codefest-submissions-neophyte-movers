@@ -6,8 +6,8 @@
 class NaturalGas: public EnergyTypes
 {
     public:
-	NaturalGas();
-	virtual string Description() const override;
+		NaturalGas() = default;
+		virtual std::string Description() const override;
 
 };
 

@@ -8,7 +8,7 @@ Solar::Solar()
 	cout<<"default constructor called";
 }
 
-string Solar::Description() const
+std::string Solar::Description() const
 {
     return "relies on energy from the sun";
 }

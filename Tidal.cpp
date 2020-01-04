@@ -1,12 +1,13 @@
 #include "Tidal.hpp"
 #include <iostream>
+#include <string>
 
 Tidal::Tidal()
 {
     cout<<"tidal contructor called"<<endl;
 }
 
-string Tidal::Description() const
+std::string Tidal::Description() const
 {
     return "Generates energy from ocean tides";
 }

@@ -6,8 +6,8 @@
 class Nuclear: public EnergyTypes
 {
     public:
-	Nuclear();
-	virtual string Description() const override;
+		Nuclear() = default;
+		virtual std::string Description() const override;
 
 };
 

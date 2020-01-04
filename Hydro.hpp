@@ -6,8 +6,8 @@
 class Hydro: public Water
 {
     public:
-    Hydro();
-    virtual string Description() const override;
+        Hydro() = default;
+        virtual std::string Description() const override;
 };
 
 

@@ -6,8 +6,8 @@
 class Oil: public EnergyTypes
 {
     public:
-	Oil();
-	virtual string Description() const override;
+		Oil() = default;
+		virtual std::string Description() const override;
 
 };//note, there are many different types of oil
 

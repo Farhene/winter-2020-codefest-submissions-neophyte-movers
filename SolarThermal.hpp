@@ -2,12 +2,13 @@
 #define SOLAR_THERMAL_HPP_
 
 #include "Solar.hpp"
+#include <string>
 
 class SolarThermal: public Solar
 {
     public:
-    SolarThermal();
-    virtual string Description() const override;
+        SolarThermal() = default;
+        virtual std::string Description() const override;
 };
 
 

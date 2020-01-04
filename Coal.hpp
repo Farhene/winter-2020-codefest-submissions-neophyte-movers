@@ -6,8 +6,8 @@
 class Coal: public EnergyTypes
 {
     public:
-	Coal();
-	virtual string Description() const override;
+		Coal();
+		virtual std::string Description() const override;
 
 };
 
