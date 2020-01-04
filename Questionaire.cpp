@@ -14,7 +14,8 @@ int main (){
 	string answer = "";
 	string place = "";
 
-	cout<<"We will begin with some small trivia questions!"<<endl <<endl;
+	cout<<"\n\n\nWe will begin with some small trivia questions!"<<endl <<endl;
+	cout << "-----------------------------------------------------" << endl<<endl;
 
 	cout<<"What do we use energy for?\n";
 	cout<<"A. Heat\n";
@@ -26,7 +27,9 @@ int main (){
 	cout<<"Type your letter answer here: ";
 	cin >> answer;
 	
-	do{
+	while(answer != "E" && answer != "e")
+	{
+		cout << "-----------------------------------------------------" << endl<<endl;
 		cout<<"Wrong answer. Try again."<<endl;
 		
 		cout<<"What do we use energy for?\n";
@@ -37,11 +40,15 @@ int main (){
 		cout<<"E. All of the above\n\n";
 		cout<<"Type your letter answer here again: ";
 		cin >> answer;
-	} while(answer != "E" && answer != "e");
+	}
 	
 	cout << "\n\nCorrect!" << endl;
 
+	cout << "-----------------------------------------------------" << endl;
+
 	cout << "Next Question" << endl;
+
+	cout << "-----------------------------------------------------" << endl;
 
 
 	cout<<"\n\nHow many forms of energy are there?\n";
@@ -54,13 +61,29 @@ int main (){
 	cout<<"Answer: ";
 	cin >> answer;
 
-	if(answer == "A" || answer == "a"){
-		cout<<"Correct! awesome!" << endl;
-		cout<<"The 4 forms of energy is; Electricity, Biofuels, Refined products, and Biochar\n";
+	while(answer != "A" && answer != "a"){
+			cout << "-----------------------------------------------------" << endl;
+		cout << "Incorrect. Please try again!" << endl;
+		cout<<"\nThe forms of energy is; Electricity, Biofuels, Refined products, and Biochar\n";
+			cout << "-----------------------------------------------------" << endl;
+
+		cout<<"\n\nHow many forms of energy are there?\n";
+		cout<<"A. 4\n";
+		cout<<"B. 2\n";
+		cout<<"C. 6\n";
+		cout<<"D. 1\n";
+		cout<<"E. there are more than 6!\n\n";
+
+		cout<<"Answer: ";
+		cin >> answer;
 	}
-	else{
-		cout<<"Wrong answer. The correct answer is A." <<endl;
-	}
+
+		cout << "\nYay! Correct!" << endl;
+		cout << "-----------------------------------------------------" << endl;
+		cout << "Next!" << endl;
+		cout << "-----------------------------------------------------" << endl;
+
+
 
 	cout<<"\n\nWhat refers to the processes that convert an energy resource into a usable form of energy?\n";
 	cout<<"A. Form\n";
@@ -71,17 +94,28 @@ int main (){
 
 	cout<<"Answer: ";
 	cin >> answer;
-	if(answer == "D" || answer == "d"){
-		cout<<"Correct! SUPER" << endl;
-		cout<<"Energy is only consumed in a few major forms - such as electricity or transportation fuels." << endl;
-	}
-	else{
-		cout<<"Wrong answer. The correct answer is D." << endl;
-	}
+	while(answer != "D" && answer != "d"){
+		cout<<"Sorry that's not right. Try again!" << endl;
+		cout << "-----------------------------------------------------" << endl;
+		cout<<"\n\nWhat refers to the processes that convert an energy resource into a usable form of energy?\n";
+		cout<<"A. Form\n";
+		cout<<"B. Transport\n";
+		cout<<"C. Production\n";
+		cout<<"D. Conversion\n";
+		cout<<"E. None of the above\n\n";
 
+		cout<<"Answer: ";
+		cin >> answer;
+	}
 	
+	cout << "\nSplendid!" << endl;;
+	cout << "-----------------------------------------------------" << endl;
+	cout << "Next Question!" << endl;
+	cout << "-----------------------------------------------------" << endl;
 
-	cout<<"\n\nIs protecting our climate FROM changing into a more negative climate hard?\n";
+
+
+	cout<<"\n\nIs protecting our planet hard?\n";
 	cout<<"A. Yes. I don't think I can do something to help our planet.\n";
 	cout<<"B. No, I'm just not sure how we can help as individuals.\n";
 	cout<<"C. No, there are ways I can help I'm sure!\n\n";
@@ -89,12 +123,48 @@ int main (){
 	cout<<"Type your letter answer: ";
 	cin>> answer;
 
-	if(answer != "B" || answer != "b" || answer != "C" || answer != "c"){
-		cout<<"Actually, we as invdividuals can help protect our climates and the Earth easily!" << endl;
-		cout<<"If one person stops burning fossil feuls, it may not feel like a big difference. But the power of one is still more effective than 0."<<endl;
-		cout << "A tree is an example of a natural climate solution. We can use nature to repair the planet." << endl << "We can also pay for things that help nature and not pay for things that destroy nature." << endl;
-		cout << "Most importantly, know what you are doing and be aware of this topic." << endl;
+	while(answer != "A" && answer != "a" && answer != "B" && answer != "b" && answer != "C" && answer != "c")
+	{
+			cout << "\n-----------------------------------------------------" << endl;
+		cout << "Please type an existing letter!" << endl;
+			cout << "-----------------------------------------------------" << endl;
+					cin >> answer;
+
 	}
+	if(answer == "B" || answer == "b" || answer == "a" || answer == "A"){
+		cout<<"\n\nTruthfully, we as invdividuals can help protect our climates and the Earth easily!\n\n";
+		cout << "Type 'N' and press enter to continue" << endl;
+		string next = "";
+		cin >> next;
+		
+		cout<<"\n\nIf one person stops burning fossil feuls, it may not feel like a big difference. But the power of one is still more effective than 0.\n\n";
+		cout << "Type 'N' and press enter to continue" << endl;
+		cin >> next;
+
+		cout << "\n\nA tree is an example of a natural climate solution. We can use nature to repair the planet.\n\n";
+		cout << "Type 'N' and press enter to continue" << endl;
+		cin >> next;
+
+		cout << "\n\nWe can also pay for things that help nature and not pay for things that destroy nature. \n\n";
+		cout << "Type 'N' and press enter to continue" << endl;
+		cin >> next;
+		
+		cout << "\n\nMost importantly, know what you are doing and be aware of this topic." << endl << endl;
+		cout << "Type 'N' and press enter to continue" << endl;
+		cin >> next;	
+	}
+
+	else if(answer == "c" || answer == "C")
+	{
+			cout << "-----------------------------------------------------" << endl;
+		cout << "Wonderful drive!" << endl;
+			cout << "-----------------------------------------------------" << endl;
+	}
+	
+			cout << "-----------------------------------------------------" << endl;
+			cout << "-----------------------------------------------------" << endl;
+
+
 /*questions on preveneting 
 climate change
 */
