@@ -25,8 +25,8 @@ int main (){
 
 	cout<<"Type your letter answer here: ";
 	cin >> answer;
-
-	while(answer != "E" || answer != "e"){
+	
+	do{
 		cout<<"Wrong answer. Try again."<<endl;
 		
 		cout<<"What do we use energy for?\n";
@@ -36,9 +36,10 @@ int main (){
 		cout<<"D. Light \n";
 		cout<<"E. All of the above\n\n";
 		cout<<"Type your letter answer here again: ";
-		cin >> answer;	
-	}
-	cout<<"Correct!"<<endl;
+		cin >> answer;
+	} while(answer != "E" && answer != "e");
+	
+	cout << "\n\nCorrect!" << endl;
 
 	cout << "Next Question" << endl;
 

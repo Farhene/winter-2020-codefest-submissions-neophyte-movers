@@ -7,8 +7,8 @@
 - thegabbythemaster, Gonzalez, Gabriella
 - darrenzhang2000, Zhang, Darren
 - Warren-source, Ball, Warren
-- 
-- 
+- JeremyC51, Chen, Jeremy
+- gabbya8, Alexis, Gabriella
 
 ### Group info (check all that apply - add an X in the [ ])
 - [ ] We are a CUNY2X bootcamp cohort team
