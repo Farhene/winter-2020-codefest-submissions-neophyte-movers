@@ -1,46 +1,45 @@
 /*tropical CPP file created by Gabriella Gonzalez
 inherits from the class Climate
+Modified by Farhene Sultana
 let me know if this is an okay class for tropical 
 and if i need to add anything else
 */
-#include "Climate.hpp"
 #include "Tropical.hpp"
 #include <string>
 #include <iostream>
 
-Tropical::Tropical():name_(""), type_(""), humidity_(false), temperature_(""), air_pressure_(""){}
+//Paramterized Constructor
+Tropical::Tropical(std::string name, std::string type, bool humidity, std::string temperature, 
+std::string air_pressure) : Climate(name, type, humidity,temperature, air_pressure),
+tropical_humid_(false), trees_(false), rain_(false){}
 
-Tropical::Tropical(std::string name, std::string type, bool humidity, std::string temperature, std::string air_pressure):
-Climate(name,type,humidity,temperature,air_pressure),TropicalHumid_(false),Trees_(0),Species_(0),Rain_(false){}
+/** @post sets tropical humid to true **/
+void Tropical::setTropicalHumidity()
+{	tropical_humid_ = true;	} 
 
-void Tropical::setTropicalHumidity(){
-	TropicalHumid_ = true;
-} 
+/** @post sets trees to true **/
+void Tropical::setTrees()
+{	trees_ = true;	}
 
-bool Tropical::TropicalIsHumid(){
-	return TropicalHumid_;
-}
+/** @post sets rain to true**/
+void Tropical::setTropicalRain()
+{	rain_ = true;	}
 
-void Tropical::setTropicalTrees(int numberOfTropicalTrees){
-	Trees_ = numberOfTropicalTrees;
-}
+/** @returns true if tropical humid **/
+bool Tropical::isHumid()
+{	return tropical_humid_;	}
 
-int Tropical::numberOfTropicalTrees(){
-	return Trees_;
-}
+/** @returns true if has trees **/
+bool Tropical::hasTrees()
+{	return trees_;	}
 
-void Tropical::setTropicalRain(){
-	Rain_ = true;
-}
+/** @returns true if has rain **/
+bool Tropical::hasRain()
+{	return rain_;	}
 
-bool Tropical::hasRain(){
-	return Rain_;
-}
 
-void Tropical::setNumberOfSpecies(int NumberOfSpecies){
-	Species_ = NumberOfSpecies;
-}
+/******************************************************/
+/****************** NOT DONE YET **********************/
+/******************************************************/
 
-int Tropical::NumberOfSpecies(){
-	return Species_;
-}
+virtual void Tropical::display() override;
