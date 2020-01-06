@@ -42,4 +42,4 @@ bool Tropical::hasRain()
 /****************** NOT DONE YET **********************/
 /******************************************************/
 
-virtual void Tropical::display() override;
+void Tropical::display();

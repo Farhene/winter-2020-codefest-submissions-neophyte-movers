@@ -9,8 +9,8 @@ January 4, 2020 **/
 
 //parameterized constructor
 Tundra::Tundra(std::string name, std::string type, bool humidity, std::string temperature, 
-std::string air_pressure) : Climate(name, type, humidity, temperature, air_pressure), trees_(0),
-mountains_(0), arctic_(false), antarctic_(false), alpine_(false){}
+std::string air_pressure) : Climate(name, type, humidity, temperature, air_pressure), trees_(false),
+mountains_(false), arctic_(false), antarctic_(false), alpine_(false){}
 
 //sets humidity
 void Tundra::setTundraHumidity()

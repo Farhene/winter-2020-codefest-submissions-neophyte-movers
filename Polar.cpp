@@ -49,4 +49,4 @@ bool Polar::hasSnow()
 /*******************************************************************************/
 
         /*display info*/
-virtual void Polar::display() override;
+void Polar::display(){}

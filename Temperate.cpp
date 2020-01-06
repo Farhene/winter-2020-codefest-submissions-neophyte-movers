@@ -40,4 +40,4 @@ bool Temperate::hasMildSummers()
 /********************************* NOT DONE YET ********************************/
 /*******************************************************************************/
           /*display info**/
-virtual void Temperate::display() override;
+void Temperate::display(){}

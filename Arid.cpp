@@ -39,4 +39,4 @@ bool Arid::hasDesert()
 /********************************* NOT DONE YET ********************************/
 /*******************************************************************************/
          /*display info*/
-virtual void Arid::display() override;
+void Arid::display(){}

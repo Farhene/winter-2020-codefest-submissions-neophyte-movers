@@ -40,4 +40,4 @@ bool Mild::hasNocturnalAnimals()
 /********************************* NOT DONE YET ********************************/
 /*******************************************************************************/
          /*display info*/
-virtual void Mild::display() override;
+void Mild::display(){}
