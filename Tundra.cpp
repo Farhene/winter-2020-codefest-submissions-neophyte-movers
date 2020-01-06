@@ -38,9 +38,6 @@ void Tundra::setMountains(){
 bool Tundra::hasMountains(){
     return mountains_;
 }
-//set number of species
-void Tundra::setNumberOfSpecies(int number_of_species){}
-//return number of species
-int Tundra::numberOfSpecies(){}
+
 //display info
 void Tundra::display(){}

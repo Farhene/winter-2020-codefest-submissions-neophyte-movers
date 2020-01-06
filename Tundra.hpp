@@ -28,10 +28,6 @@ class Tundra : public Climate {
         void setMountains();
         /*returns mountain status*/
         bool hasMountains();
-        /*sets number of species living*/
-        void setNumberOfSpecies(int number_of_species);
-        /*return number of species*/
-        int numberOfSpecies();
         /*display info*/
         virtual void display() override;
     
