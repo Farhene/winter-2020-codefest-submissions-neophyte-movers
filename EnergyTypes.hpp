@@ -8,7 +8,6 @@ class EnergyTypes
 	public:
 		EnergyTypes() = default;
 		virtual std::string Description() const = 0;
-	
 };
 
 #endif

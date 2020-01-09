@@ -6,10 +6,15 @@ let me know if i am heading in the right direction
 */
 
 #include "Climate.hpp"
+#include "ClimateType.hpp" //THIS FILE INCLUDES ALL CLIMATE FILES. AND CALLS THE DISPLAY FUNCTION OF EACH CLIMATE FILES
+#include "AllEnergy.hpp" //THIS FILE INCLUDES ALL ENERGYTYPE FILES.
+
 #include "Tropical.hpp"
 #include "Polar.hpp"
+
 #include "Water.hpp"
 #include "Ocean.hpp"
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -400,16 +405,3 @@ climate change
 	}
 }
 //testing
-
-/*********************************************************************************************************************************/
-/*********************************************************************************************************************************/
-/*********************************************************************************************************************************/
-/*********************************************************************************************************************************/
-/*********************************************************************************************************************************/
-
-//STAGE 2 - Based on User Input, we can make different branches based on how the user can help their climate
-
-cout << "\n\n\n Now we will move on to Stage 2! How can we as invdividuals help our climate in our everday lives? \n\n We shall begin with what you like to do.\n\n\n"
-
-//Here I will have the user write one sentence of whatever they want. And I will use a forloop to catch certain string streams of words that the program will have noticed.
-//For example, if someone typed in lights or candles, the forloop may catch that word and the program will branch to different ends based on that 
