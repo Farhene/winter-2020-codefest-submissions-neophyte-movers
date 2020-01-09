@@ -3,7 +3,7 @@
  **/
 
 #include <iostream>
-
+using namespace std;
 //Constructor
 Climate::Climate():name_(""), type_(""), humidity_(false), temperature_(""), air_pressure_(""){}
 
