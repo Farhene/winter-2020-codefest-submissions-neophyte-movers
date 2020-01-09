@@ -5,6 +5,11 @@ Need help with the while loop, error is said in the comment before the loop
 let me know if i am heading in the right direction
 */
 
+#include "Climate.hpp"
+#include "Tropical.hpp"
+#include "Polar.hpp"
+#include "Water.hpp"
+#include "Ocean.hpp"
 #include <iostream>
 #include <string>
 using namespace std;
