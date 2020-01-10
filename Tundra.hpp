@@ -1,16 +1,20 @@
 /** @file Tundra.hpp
 Created by Gabriella Alexis
+Modifed by Farhene Sultana
 January 4, 2020 **/
 
 #ifndef TUNDRA_H_
 #define TUNDRA_H_
 
 #include "Climate.hpp"
+#include <iostream>
+#include <string>
 
-class Tundra : public Climate {
+class Tundra : public Climate 
+{
     public:
         /* default constructor */
-        Tundra(); 
+        Tundra() = default; 
         /*parameterized constructor*/
         Tundra(std::string name, std::string type, bool humidity, 
         std::string temperature, std::string air_pressure);
@@ -18,8 +22,12 @@ class Tundra : public Climate {
         void setTundraHumidity();
         /*returns humidity status*/
         bool TundraIsHumid();
-        /*sets the three types of tundra climates: arctic, antarctic, alpine*/
-        void setTundraTypes();
+        /** @post sets arctic to true **/
+        void setArctic();
+        /** @post sets antarctic to true **/
+        void setAntarctic();
+        /** @post sets alpine to true **/
+        void setAlpine();
         /*sets trees*/
         void setTrees();
         /*returns tree status*/
@@ -33,8 +41,10 @@ class Tundra : public Climate {
     
     private:
         bool trees_;
-        int species_;
         bool mountains_;
         bool humidity_;
+        bool arctic_;
+        bool antarctic_;
+        bool alpine_;
 }
 #endif

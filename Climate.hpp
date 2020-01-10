@@ -14,11 +14,12 @@ class Climate
         Climate() = default;
         
         //Paramterized Constructor
-        Climate(std::string name, std::string type, bool humidity, std::string temperature, std::string air_pressure);
+        Climate(std::string name, std::string type, bool humidity, std::string temperature, 
+        std::string air_pressure);
 
         /** @return name of climate 
         **/
-        std::string getClimateName();          
+        std::string getClimateName();        
         
         /** @return type of the climate 
         **/
@@ -42,9 +43,6 @@ class Climate
         virtual void display() = 0; //will be overridden by the other classes
 
 
-
-
-
     protected:
         std::string name_;          // name of climate
         std::string type_;          // type of the climate
@@ -52,4 +50,5 @@ class Climate
         std::string temperature_;   // high or low temperatures
         std::string air_pressure_;  // high or low air pressure
 
-} //end of Climate.hpp
+} 
+#endif//end of Climate.hpp
