@@ -6,12 +6,13 @@
 #define CLIMATE_H_
 
 #include <iostream>
+using namespace std;
 
 class Climate
 {
     public:
         //Constructor
-        Climate() = default;
+        Climate();
         
         //Paramterized Constructor
         Climate(std::string name, std::string type, bool humidity, std::string temperature, 
@@ -50,5 +51,5 @@ class Climate
         std::string temperature_;   // high or low temperatures
         std::string air_pressure_;  // high or low air pressure
 
-} 
+};
 #endif//end of Climate.hpp

@@ -9,29 +9,17 @@ and if i need to add anything else
 #include <iostream>
 using namespace std;
 
-Ocean::Ocean():name_(""), type_(""), humidity_(false), temperature_(""), air_pressure_(""){}
+Ocean::Ocean():
+Climate(){}
 
 Ocean::Ocean(std::string name, std::string type, bool humidity, std::string temperature, std::string air_pressure):
-Climate(name,type,humidity,temperature,air_pressure),Acidic_(false),OceanLife_(0){}
+Climate(name,type,humidity,temperature,air_pressure){}
 
-// void Ocean::setOceanAcidic(){
-// 	Acidic_ = true;
-// } 
-
-// bool Ocean::OceanIsAcidic(){
-// 	return Acidic_;
-// }
-
-// void Ocean::setOceanLife(int numberOfOceanLife){
-// 	OceanLife_ = numberOfTropicalTrees;
-// }
-
-// int Tropical::numberOfTropicalTrees(){
-// 	return OceanLife_;
-// }
 
 void Ocean::display(){
-			cout<<"We are visiting the beach! surrounded by water and beautiful sea creature life\n";
+
+		string answer = "";
+			cout<<"\n\nWe are visiting the beach! surrounded by water and beautiful sea creature life\n";
 		cout<<"----------------------------------------------------------------------------------\n";
 
 		cout<<"\n\nWe set up everything on the beach and brought lots of items, what should we keep in mind before we leave?\n";

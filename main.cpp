@@ -6,15 +6,16 @@ let me know if i am heading in the right direction
 */
 
 #include "Climate.hpp"
-#include "ClimateType.hpp" //THIS FILE INCLUDES ALL CLIMATE FILES. AND CALLS THE DISPLAY FUNCTION OF EACH CLIMATE FILES
-#include "AllEnergy.hpp" //THIS FILE INCLUDES ALL ENERGYTYPE FILES.
+//#include "ClimateType.hpp" //THIS FILE INCLUDES ALL CLIMATE FILES. AND CALLS THE DISPLAY FUNCTION OF EACH CLIMATE FILES
+//#include "AllEnergy.hpp" //THIS FILE INCLUDES ALL ENERGYTYPE FILES.
 
-#include "Tropical.hpp"
-#include "Polar.hpp"
+//#include "Tropical.hpp"
+//#include "Polar.hpp"
 
-#include "Water.hpp"
+//#include "Water.hpp"
 #include "Ocean.hpp"
-
+#include "urbanareas.hpp"
+#include "Rural.hpp"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -310,71 +311,16 @@ climate change
 	cin >> place;
 
 	if(place == "A" || place == "a"){
-		cout<<"We are living in a Urban area, such as New York City!\n";
-
-		cout<<"Even though we do not have much grass or water surrounding us, we are still surrounded by air.\n";
-		cout<<"This air that we are breathing in is highly polluted. Lets figure out ways\n";
-		cout<<"that we can prevent polluted air to continue in the big apple!"<<endl<<endl;
-
-		cout<<"-----------------------------------------------------------\n";
-
-		cout<<"What is the best way to use transportation?\n\n";
-		cout<<"A. Train!\n";
-		cout<<"B. Walking!\n";
-		cout<<"C. Taxi!\n";
-		cout<<"D. Bike!\n";
-		cout<<"E.None of the above\n";
-		cout<<"F. All of the above\n";
-
-		cout<<"Answer: ";
-		cin>> answer;
-
-		if(answer == "B" || answer == "b" || answer == "D" || answer == "d" ){
-			cout<<"Correct answer! using the bike or walking will reduce less energy!"<<endl;
-
-		}
-		else{
-			cout<<"Wrong answer. This will in fact cause the use of more energy which will continue for us to have pollution"<<endl;
-		}
-
-		cout<<"\n\nWhich transit vehicle is supposedly better for our climate?\n";
-		cout<<"A. Subway Trains\n";
-		cout<<"B. Taxi\n";
-		cout<<"C. Electric bus\n";
-		cout<<"D. Non electric bus\n";
-
-		cout<<"Answer ; ";
-		cin >> answer;
-
-		if(answer != "C" && answer != "c"){
-			cout<<"Wrong Answer. The correct answer is electric bus because it limits greenhouse gases from vehicles"<< endl;
-		}
-		else{
-			cout<<"Correct answer! Electric buses limit greenhouse gases from vehicles"<<endl;
-		}
+		Urban U;
+		U.display();
 	}
 
 	if(place == "B" || place == "b"){
-		cout<<"We are living in a rural area. Surrounded by grass and trees\n";
-		cout<<"-----------------------------------------------------------------"<<endl;
-
-		cout<<"\n\nHow many trees should we planet in our neighborhood?\n";
-		cout<<"A. 10-20\n";
-		cout<<"B. 20-50\n";
-		cout<<"C. 50-100\n";
-		cout<<"D. As much as we can!\n";
-
-		cout<<"Answer: ";
-		cin>> answer;
-
-		if(answer != "D" && answer != "d"){
-			cout<<"Wrong Answer. the correst answer is as much as we can! We want to create as many homes for our animals and keep our earth growing"<< endl;
-		}
-		else{
-			cout<<"Yes correct! it is never too much to grow trees!"<<endl;
-		}
+		Rural R;
+		R.display();
 
 	}
+
 
 	if(place == "C" || place == "c"){
 		cout<<"We are visiting the forest for some camping! surrounded by green and trees. Even though there are trees surrounding us, it is best to keep it that way and clean\n";

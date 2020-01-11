@@ -9,26 +9,11 @@ inherits from the class CLimate
 
 class Ocean: public Climate {
 	public:
-		Ocean() = default;
+		Ocean();
         Ocean(std::string name, std::string type, bool humidity, std::string temperature, std::string air_pressure);
-
-        //sets the tropical humidity to true
-		void setOceanAcidic();
-
-		//@return whether the tropical climate it hot or not
-		bool OceanIsAcidic();
-
-		void setOceanLife(int numberOfOceanLife);
-
-		//returns the number of trees in tropical
-		int numberOfOceanLife();
 
 		virtual void display() override;
 
-	private:
-		bool OceanTemp_;
-		int OceanLife_; 
-		bool Acidic_; //is raining or not
+};
 
-
-}//end of Tropical.hpp
+#endif
