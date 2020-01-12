@@ -16,6 +16,7 @@ let me know if i am heading in the right direction
 #include "Ocean.hpp"
 #include "urbanareas.hpp"
 #include "Rural.hpp"
+#include "Forest.hpp"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -323,24 +324,8 @@ climate change
 
 
 	if(place == "C" || place == "c"){
-		cout<<"We are visiting the forest for some camping! surrounded by green and trees. Even though there are trees surrounding us, it is best to keep it that way and clean\n";
-		cout<<"-------------------------------------------------------------------------"<<endl;
-
-		cout<<"\n\nSince we are camping, we are going to be creating a camp fire. What should we make sure what to do for the safety of the woods?\n";
-		cout<<"A. Make sure its hot\n";
-		cout<<"B. Make sure its fully put out\n";
-		cout<<"C. Make sure its big\n";
-		cout<<"D. Make sure it builds a lot of smoke\n";
-
-		cout<<"Answer: ";
-		cin >> answer;
-
-		if(answer != "b" && answer != "B"){
-			cout<<"Wrong answer. We want to make sure the fire is fully out so it would not create forest fires\n";
-		}
-		else{
-			cout<<"Correct!"<<endl;
-		}
+		Forest F;
+		F.display();
 	}
 
 	if(place == "D" || place == "d"){
