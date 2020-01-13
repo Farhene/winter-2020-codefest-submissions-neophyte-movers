@@ -6,8 +6,8 @@ using namespace std;
 class EnergyTypes
 {
 	public:
-		EnergyTypes() = default;
-		virtual std::string Description() const = 0;
+	virtual string Description() const = 0;
+	virtual string ListProsCons() const = 0;
 };
 
 #endif
