@@ -12,8 +12,8 @@ class Solar: public EnergyTypes
 	virtual void ListProsCons() const override;
 
 	private:
-		const int NUM_PROS = 3;
-		const int NUM_CONS = 1;
+		static const int NUM_PROS = 3;
+		static const int NUM_CONS = 1;
 		string pros[NUM_PROS];
 		string cons[NUM_CONS];
 

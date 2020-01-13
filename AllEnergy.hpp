@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>
-#include "Coal.cpp"
+//#include "Coal.cpp"
 #include "Hydro.cpp"
 #include "NaturalGas.cpp"
 #include "Nuclear.cpp"
@@ -15,7 +15,7 @@
 #include "Solar.cpp"
 #include "SolarThermal.cpp"
 #include "Tidal.cpp"
-#include "Water.cpp"
+//#include "Water.cpp"
 #include "Wind.cpp"
 
 class AllEnergy 
@@ -26,5 +26,5 @@ class AllEnergy
 
         /** @post given energy-type desired, this function will call that specified energy type definition **/
         void setEnergyType(std::string energy_type);
-}
+};
 #endif

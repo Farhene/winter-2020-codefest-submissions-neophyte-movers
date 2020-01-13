@@ -46,5 +46,5 @@ class Tundra : public Climate
         bool arctic_;
         bool antarctic_;
         bool alpine_;
-}
+};
 #endif

@@ -11,8 +11,8 @@ class Oil: public EnergyTypes
 	virtual void ListProsCons() const override;
 
 	private:
-		const int NUM_PROS = 1;
-		const int NUM_CONS = 4;
+		static const int NUM_PROS = 1;
+		static const int NUM_CONS = 4;
 		string pros[NUM_PROS];
 		string cons[NUM_CONS];
 };

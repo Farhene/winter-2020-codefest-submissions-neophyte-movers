@@ -45,5 +45,5 @@ class Arid : public Climate
         bool hot_;
         bool dry_;
         bool desert_;
-}
+};
 #endif //end of Arid.hpp

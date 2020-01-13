@@ -42,5 +42,5 @@ class Tropical: public Climate
 		bool rain_; //is raining or not
 
 
-}
+};
 #endif //end of Tropical.hpp

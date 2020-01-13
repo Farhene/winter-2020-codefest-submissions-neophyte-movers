@@ -20,5 +20,5 @@ class ClimateType
         
         /** @post sets the type of climate the user has selected to this class **/
         void setClimateType(std::string climate_type);
-}
+};
 #endif

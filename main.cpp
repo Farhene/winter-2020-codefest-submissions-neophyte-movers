@@ -6,8 +6,8 @@ let me know if i am heading in the right direction
 */
 
 #include "Climate.hpp"
-//#include "ClimateType.hpp" //THIS FILE INCLUDES ALL CLIMATE FILES. AND CALLS THE DISPLAY FUNCTION OF EACH CLIMATE FILES
-//#include "AllEnergy.hpp" //THIS FILE INCLUDES ALL ENERGYTYPE FILES.
+#include "ClimateType.hpp" //THIS FILE INCLUDES ALL CLIMATE FILES. AND CALLS THE DISPLAY FUNCTION OF EACH CLIMATE FILES
+#include "AllEnergy.hpp" //THIS FILE INCLUDES ALL ENERGYTYPE FILES.
 
 //#include "Tropical.hpp"
 //#include "Polar.hpp"

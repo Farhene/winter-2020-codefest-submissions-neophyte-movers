@@ -44,6 +44,6 @@ class Temperate : public Climate
         bool plant_life_;
         bool cold_winter_;
         bool mild_summer_;
-}
+};
 
 #endif //end of Temperate.hpp

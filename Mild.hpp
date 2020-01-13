@@ -46,5 +46,5 @@ class Mild : public Climate
         bool mild_winter_;
         bool hot_dry_summer_;
         bool nocturnal_animals_;
-}
+};
 #endif //end of Mild.hpp

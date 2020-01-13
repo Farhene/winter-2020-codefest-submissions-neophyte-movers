@@ -50,5 +50,5 @@ class Polar : public Climate
         bool cold_;
         bool plant_life_;
         bool snow_;
-}
+};
 #endif //end of Polar.hpp
