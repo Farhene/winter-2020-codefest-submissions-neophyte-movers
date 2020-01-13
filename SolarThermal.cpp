@@ -21,7 +21,7 @@ string SolarThermal::Description() const
     return "Captures heat from the sun to create steam, which powers turbines to makes";
 }
 
-string SolarThermal::ListProsCons() const
+void SolarThermal::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

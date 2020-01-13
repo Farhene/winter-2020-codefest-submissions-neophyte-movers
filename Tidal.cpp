@@ -20,7 +20,7 @@ string Tidal::Description() const
 }
 
 
-string Tidal::ListProsCons() const
+void Tidal::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

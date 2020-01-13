@@ -18,7 +18,7 @@ string Oil::Description() const
     return "the process of generating energy from oil, located in reservoirs in the earth";
 }
 
-string Oil::ListProsCons() const
+void Oil::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

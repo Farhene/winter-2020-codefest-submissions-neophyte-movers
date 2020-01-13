@@ -7,7 +7,7 @@ class EnergyTypes
 {
 	public:
 	virtual string Description() const = 0;
-	virtual string ListProsCons() const = 0;
+	virtual void ListProsCons() const = 0;
 };
 
 #endif

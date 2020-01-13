@@ -20,7 +20,7 @@ string Hydro::Description() const
     return "Uses the flow of water to spin a turbine to generate electricity\nit's what's used in dams";
 }
 
-string Hydro::ListProsCons() const
+void Hydro::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

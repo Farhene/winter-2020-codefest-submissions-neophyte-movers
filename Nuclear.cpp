@@ -20,7 +20,7 @@ string Nuclear::Description() const
     return "uses energy found within the nucleus of an atom with either fusion or fission";
 }
 
-string Nuclear::ListProsCons() const
+void Nuclear::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

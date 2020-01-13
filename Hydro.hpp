@@ -8,7 +8,7 @@ class Hydro: public EnergyTypes
     public:
     	Hydro();
    		virtual string Description() const override;
-		virtual string ListProsCons() const override;
+		virtual void ListProsCons() const override;
 
 	private:
 		const int NUM_PROS = 3;

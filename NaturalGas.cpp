@@ -16,7 +16,7 @@ string NaturalGas::Description() const
     return "extracting reservoirs of gas, mostly methane, deep in the earth";
 }
 
-string NaturalGas::ListProsCons() const
+void NaturalGas::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

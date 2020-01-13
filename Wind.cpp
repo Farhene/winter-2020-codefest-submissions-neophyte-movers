@@ -17,7 +17,7 @@ string Wind::Description() const
 }
 
 
-string Wind::ListProsCons() const
+void Wind::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)

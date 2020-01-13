@@ -20,7 +20,7 @@ string Solar::Description() const
     return "relies on energy from the sun";
 }
 
-string Solar::ListProsCons() const
+void Solar::ListProsCons() const
 {
 	cout<<"pros: "<<endl;
 	for(int i = 0; i<NUM_PROS; i++)
