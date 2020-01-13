@@ -1,13 +1,20 @@
 #ifndef HYDRO_HPP_
 #define HYDRO_HPP_
 
-#include "Water.hpp"
+#include "EnergyTypes.hpp"
 
-class Hydro: public Water
+class Hydro: public EnergyTypes
 {
     public:
-        Hydro() = default;
-        virtual std::string Description() const override;
+    	Hydro();
+   		virtual string Description() const override;
+		virtual string ListProsCons() const override;
+
+	private:
+		const int NUM_PROS = 3;
+		const int NUM_CONS = 3;
+		string pros[NUM_PROS];
+		string cons[NUM_CONS];
 };
 
 
