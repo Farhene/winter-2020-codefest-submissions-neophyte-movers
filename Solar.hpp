@@ -7,8 +7,15 @@ using namespace std;
 class Solar: public EnergyTypes
 {
     public:
-		Solar() = default;
-		virtual std::string Description() const override;
+	Solar();
+	virtual string Description() const override;
+	virtual string ListProsCons() const override;
+
+	private:
+		const int NUM_PROS = 3;
+		const int NUM_CONS = 1;
+		string pros[NUM_PROS];
+		string cons[NUM_CONS];
 
 };
 

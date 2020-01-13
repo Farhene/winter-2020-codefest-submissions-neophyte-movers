@@ -6,9 +6,15 @@
 class Nuclear: public EnergyTypes
 {
     public:
-		Nuclear() = default;
-		virtual std::string Description() const override;
+	Nuclear();
+	virtual string Description() const override;
+	virtual string ListProsCons() const override;
 
+	private:
+		const int NUM_PROS = 3;
+		const int NUM_CONS = 3;
+		string pros[NUM_PROS];
+		string cons[NUM_CONS];
 };
 
 #endif

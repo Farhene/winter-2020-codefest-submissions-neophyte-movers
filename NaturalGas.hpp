@@ -6,8 +6,15 @@
 class NaturalGas: public EnergyTypes
 {
     public:
-		NaturalGas() = default;
-		virtual std::string Description() const override;
+	NaturalGas();
+	virtual string Description() const override;
+	virtual string ListProsCons() const override;
+
+	private:
+		const int NUM_PROS = 1;
+		const int NUM_CONS = 1;
+		string pros[NUM_PROS];
+		string cons[NUM_CONS];
 
 };
 

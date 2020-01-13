@@ -1,14 +1,21 @@
 #ifndef WIND_HPP_
 #define WIND_HPP_
 #include "EnergyTypes.hpp"
-#include <string>
 
 
 class Wind: public EnergyTypes
 {
     public:
-		Wind() = default;
-		virtual std::string Description() const override;
+	Wind();
+	virtual string Description() const override;
+    virtual string ListProsCons() const override;
+
+	private:
+		const int NUM_PROS = 1;
+		const int NUM_CONS = 2;
+		string pros[NUM_PROS];
+		string cons[NUM_CONS];
+
 
 };
 
