@@ -1,0 +1,42 @@
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> -->
+<!--climate html written by Gabriella Alexis for Hunter Codefest 2020
+    January 9, 2020-->
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Climate Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script defer src="climate.js"></script>
+    </head>
+    <header>
+        <p>Welcome to climate game!</p>
+        <div class="intro">
+            <p>Click 'How to play' to view instructions</p>
+            <p>When done, click 'start game' to begin</p>
+        </div>
+        <div class="credit">
+            <p>created by the neophyte movers</p>
+        </div>
+    </header>
+    <body>
+        <a data-modal-target = "#modal" class="btn">How to Play</a>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Instructions</div>
+                <a data-close-button class="close-button">&times;</a>
+            </div>
+            <div class="modal-body">
+                In this game, you will start by choosing one of the three game modes.
+                First one is to learn the climate and energy terms that you will then
+                be tested on in the next two modes.  Each test will consist of several questions
+                related to the terms.  You will have 30 seconds to answer each question.
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="divider"></div>
+        <a href="pick-a-mode.html" class="btn">Start Game</a>
+    </body>
+</html>

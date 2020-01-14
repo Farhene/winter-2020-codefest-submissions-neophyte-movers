@@ -1,42 +1,24 @@
-<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> -->
-<!--climate html written by Gabriella Alexis for Hunter Codefest 2020
-    January 9, 2020-->
+<!--pick-a-mode html written by Jeremy Chen for Hunter Codefest 2020
+    January 12, 2020-->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Climate Game</title>
-        <link rel="stylesheet" type="text/css" href="climate.css">
-        <script defer src="climate.js"></script>
-    </head>
-    <header>
-        <p>Welcome to climate game!</p>
-        <div class="intro">
-            <p>Click 'How to play' to view instructions</p>
-            <p>When done, click 'start game' to begin</p>
-        </div>
-        <div class="credit">
-            <p>created by the neophyte movers</p>
-        </div>
-    </header>
-    <body>
-        <a data-modal-target = "#modal" class="btn">How to Play</a>
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="title">Instructions</div>
-                <a data-close-button class="close-button">&times;</a>
-            </div>
-            <div class="modal-body">
-                In this game, you will start by choosing one of two sources: 
-                Energy types or Climate types.
-                Afterwards, you will be led to choose a subcategory of each source.
-                Each subcategory will display info.
-            </div>
-        </div>
-        <div id="overlay"></div>
-        <div class="divider"></div>
-        <a href="pick-a-mode.html" class="btn">Start Game</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climate Game Start</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+<script defer src="climate.js"></script>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0;padding: 45px 15px;">
+        <a href="main.html" class="btn">Main Menu</a>
+			<div class="half-divider"></div>
+        <a href="pick-a-mode.html" class="btn">Go Back</a>
+    </div>
+
+    <p>game has started</p>
+</body>
 </html>

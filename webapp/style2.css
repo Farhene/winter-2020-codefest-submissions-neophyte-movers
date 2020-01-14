@@ -1,0 +1,3 @@
+.container {
+    grid-auto-flow: row | column | row dense | column dense;
+  }
