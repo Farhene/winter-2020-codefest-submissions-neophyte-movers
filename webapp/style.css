@@ -58,7 +58,12 @@ html, body {
   height: auto;
   display: inline-block;
 }
-  
+
+.centeredDescription{
+	text-align: center;
+	color: black;
+}
+
   .btn {
     top: 0;
     left: 0;
