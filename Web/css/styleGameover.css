@@ -1,0 +1,207 @@
+/*climate css written by Gabriella Alexis and edited by Farhene Sultana for Hunter Codefest 2020
+  January 9, 2020*/
+
+  html, body {
+    height: 100%;
+    text-align: top;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: bold;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    left: 15%;
+  }
+
+  .intro{
+      top: 20%;
+      left: 25%;
+      font-size: 30px;
+      text-align: center;
+      position: fixed;
+
+  }
+
+  .credit{
+      bottom: 20%;
+      left: 30%;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 130px;
+      position: fixed;
+
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .divider{
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+.half-divider{
+  width: 25px;
+  height: auto;
+  display: inline-block;
+}
+
+.centeredDescription{
+	text-align: center;
+	color: black;
+}
+
+  .btn {
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    position: relative;
+    /*display: inline-block;*/
+    padding: 30px 40px;
+    background-color: gray;
+    text-transform: uppercase;
+    color: #404040;
+    font-family: arial;
+    letter-spacing: 1px;
+    box-shadow: -6px 6px 0 #404040;
+    text-decoration: none;
+  }
+  .btn:hover {
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 #404040;
+  }
+  .btn:hover::after {
+    top: 1px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+  }
+  .btn:hover::before {
+    bottom: -2px;
+    right: 1px;
+    width: 4px;
+    height: 4px;
+  }
+  .btn::after {
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #404040;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .btn::before {
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #404040;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  a.btn {
+    position: relative;
+  }
+  
+  a:active.btn {
+    top: 6px;
+    left: -6px;
+    box-shadow: none;
+  }
+  a:active.btn:before {
+    bottom: 1px;
+    right: 1px;
+  }
+  a:active.btn:after {
+    top: 1px;
+    left: 1px;
+  }
+
+  .btn-group{
+    display: block;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    width: 500px;
+    max-width: 80%;
+    height: 50%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
