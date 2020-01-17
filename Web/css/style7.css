@@ -1,7 +1,7 @@
-/*climate css written by Gabriella Alexis for Hunter Codefest 2020
+/*climate css written by Gabriella Alexis and edited by Farhene Sultana for Hunter Codefest 2020
   January 9, 2020*/
 
-html, body {
+  html, body {
     height: 100%;
     text-align: top;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -44,7 +44,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: turquoise;
+    background-color: burlywood;
   }
 
   .divider{
@@ -71,7 +71,7 @@ html, body {
     position: relative;
     /*display: inline-block;*/
     padding: 30px 40px;
-    background-color: gold;
+    background-color:lightgoldenrodyellow;
     text-transform: uppercase;
     color: #404040;
     font-family: arial;

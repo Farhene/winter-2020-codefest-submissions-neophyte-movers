@@ -44,7 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: powderblue;
+    background-color: cornflowerblue;
   }
 
   .divider{
@@ -71,7 +71,7 @@
     position: relative;
     /*display: inline-block;*/
     padding: 30px 40px;
-    background-color: cornflowerblue;
+    background-color: papayawhip;
     text-transform: uppercase;
     color: #404040;
     font-family: arial;
