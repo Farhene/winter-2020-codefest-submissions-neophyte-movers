@@ -2,41 +2,69 @@
 <!--climate html written by Gabriella Alexis for Hunter Codefest 2020
     January 9, 2020-->
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Climate Game</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script defer src="js/climate.js"></script>
-    </head>
-    <header>
-        <p style="position: absolute; top: 20px; width: 1500px; font-size: 60px;"> Welcome to the climate game!</p>
-        <div class="intro" style="align-self: center; font-size: 20px; left: 400px; right: 500px; width: 600px;">
-            <p>Click 'How to play' to view instructions. When done, click 'start game' to begin
-            </p>
-        </div>
-        <div class="credit">
-            <p>created by the neophyte movers</p>
-        </div>
-    </header>
-    <body>
-        <a data-modal-target = "#modal" class="btn">How to Play</a>
-        <div class="modal" id="modal" style="position: absolute;">
-            <div class="modal-header">
-                <div class="title">Instructions</div>
-                <a data-close-button class="close-button">&times;</a>
-            </div>
-            <div class="modal-body">
-                <p> In this educational game platform, we recommend you click on learning the terms first.</p>
-                <p> Starting the game will teach you the 6 climate types and 7 energy types. Or you can skip this part.</p>
-                <p> Playing scenarios under start game will be where you are given a situation and the situation will progress based on your choices.</p>
-                <p> Good Luck!</p>
-            </div>
-        </div>
-        <div id="overlay"></div>
-        <div class="divider"></div>
-        <a href="terms.html" class="btn">Start Game</a>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Climate Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/climate.js"></script>
+  </head>
+  <header>
+    <p style="position: absolute; top: 20px; width: 1500px; font-size: 60px;">
+      Welcome to the climate game!
+    </p>
+    <div
+      class="intro"
+      style="align-self: center; font-size: 20px; left: 400px; right: 500px; width: 600px;"
+    >
+      <p>
+        Click 'How to play' to view instructions. When done, click 'start game'
+        to begin
+      </p>
+    </div>
+    <div class="credit">
+      <p>created by the neophyte movers</p>
+    </div>
+  </header>
+  <body>
+    <img
+      src="https://cdn.pixabay.com/photo/2018/09/17/18/07/manual-3684460_1280.jpg"
+      alt="https://cdn.pixabay.com/photo/2018/09/17/18/07/manual-3684460_1280.jpg"
+      width="120"
+      height="80"
+    />
+    <a data-modal-target="#modal" class="btn">How to Play</a>
+    <div class="modal" id="modal" style="position: absolute;">
+      <div class="modal-header">
+        <div class="title">Instructions</div>
+        <a data-close-button class="close-button">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p>
+          In this educational game platform, we recommend you click on learning
+          the terms first.
+        </p>
+        <p>
+          Starting the game will teach you the 6 climate types and 7 energy
+          types. Or you can skip this part.
+        </p>
+        <p>
+          Playing scenarios under start game will be where you are given a
+          situation and the situation will progress based on your choices.
+        </p>
+        <p>Good Luck!</p>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="divider"></div>
+    <a href="terms.html" class="btn">Start Game</a>
+    <img
+      src="http://kennysantos.com/wp-content/uploads/2015/10/start.jpg"
+      alt="http://kennysantos.com/wp-content/uploads/2015/10/start.jpg"
+      width="120"
+      height="80"
+    />
+  </body>
 </html>
